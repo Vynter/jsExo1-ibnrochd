@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaine 1</title>
+    <style>
+        input {
+            background-color: rgb(145, 78, 207);
+            border-radius: 20px;
+            border: none;
+            padding: 10px 5px;
+            width: 80px;
+            margin: 20px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            transition: 0.5s ease;
+            color: white;
+        }
+
+        input:hover {
+            background-color: white;
+            border: solid 1px rgb(145, 78, 207);
+            color: rgb(145, 78, 207);
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .warpper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+        function alert_me() {
+            alert("Ceci est un message");
+        }
+        function conf() {
+            document.write("<p>Une derniére questions pour vous</p><br>");
+            document.write("<p>Le programme est il correcte ?</p><br>");
+            document.write(confirm("Le programme est il correcte ?") ? "Oui" : "Non");
+
+        }
+
+
+        function prp() {
+            alert("Le Message saisit : " + prompt("Veuillez saisir un message"));
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="warpper">
+        <input type="button" class="" value="alert" onclick="alert_me()">
+        <input type="button" class="" value="prompt" onclick="prp()">
+        <input type="button" class="" value="confirm" onclick="conf()">
+
+    </div>
+
+</body>
+
+</html>
